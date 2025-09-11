@@ -11,7 +11,7 @@ The following command lists all contents of the `projects` directory, including 
 
 <p align="center">
 <b>Image 1:</b> <br>
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.png"/>
 <br/>
 
 
