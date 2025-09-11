@@ -1,1 +1,43 @@
-# File-permissions-in-Linux
+# 📌 Portfolio Project Summary  
+As part of my role in supporting the research team at my organization, I was tasked with updating file and directory permissions within the `projects` directory. The current permissions did not properly reflect the required levels of authorization, which posed a security risk. To address this, I performed a detailed permissions audit and updated the access control settings using Linux commands.  
+
+## How I Did the Project  
+1. **Checked file and directory details**  
+   - Used `ls -la` to list all files, including hidden ones, and review their current permissions.  
+   - Interpreted the 10-character permission strings to understand who had read, write, and execute access.  
+
+2. **Analyzed permission strings**  
+   - Broke down each string into file type, user permissions, group permissions, and other permissions.  
+   - Example: `-rw-rw-r--` → regular file, user/group have read+write, others have read-only.  
+
+3. **Updated permissions on files**  
+   - Removed **write access** for "other" users on files like `project_k.txt` using:  
+     ```bash
+     chmod o-w project_k.txt
+     ```  
+   - Modified permissions on hidden files such as `.project_x.txt` to allow only read access for user and group:  
+     ```bash
+     chmod u-w .project_x.txt  
+     chmod g-w .project_x.txt  
+     chmod g+r .project_x.txt  
+     ```  
+
+4. **Updated directory permissions**  
+   - Adjusted the `drafts` directory so that only `researcher2` retained execute permissions:  
+     ```bash
+     chmod g-x drafts
+     ```  
+   - Verified changes with `ls -la` to confirm updates.  
+
+## Result  
+Successfully aligned file and directory permissions with organizational security policies. The updated permissions now prevent unauthorized write or execute access, reducing the risk of accidental modifications or misuse of sensitive project files.  
+
+---
+
+# 📌 Resume Project Section  
+
+**Linux File Permissions Management**  
+- Conducted a permissions audit and updated security controls for files and directories in a Linux environment.  
+- Applied `ls -la` and `chmod` commands to review and modify access rights for users, groups, and others.  
+- Restricted unauthorized write access to sensitive files and enforced user-specific directory execution permissions.  
+- Improved system security posture by ensuring file permissions matched organizational authorization policies.  
