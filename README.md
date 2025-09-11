@@ -48,22 +48,18 @@ The file permissions for `project_t.txt` are `-rw-rw-r--`.
 </p>
 
 ## ✏️ Change File Permissions
+The organization decided that others should not have write access to any files. To remove write access for others on project_k.txt.<br>
+The following code demonstrates how I used Linux commands to do this:
+
 <p align="center">
 <b>Screenshot 2:</b> <br>
-The organization decided that others should not have write access to any files. To remove write access for others on project_k.txt.<br>
-The following code demonstrates how I used Linux commands to do this:<br>
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/721869215fc16de5fdeffdd993d726625854f223/Images/002.png"/>
-
-The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command.<br> 
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/721869215fc16de5fdeffdd993d726625854f223/Images/002.png"/><br>
+The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command.
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/C%20images%201.png"/><br>
-   
-The chmod command changes the permissions on files and directories. The first argument indicates what <b>permissions</b> should be changed,<br>
+The chmod command changes the permissions on files and directories. The first argument indicates what <b>permissions</b> should be changed,
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-1.png"/><br>
-
 And the second argument specifies the <b>file or directory</br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-2.png"/>
-
-</p>
 <br/>
 
 <p align="center">
