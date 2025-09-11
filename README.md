@@ -9,13 +9,27 @@ To complete this task, I performed the following steps:
 The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.
 The following command lists all contents of the `projects` directory, including hidden files, and displays their permissions:  
 
-ls -la projects
 <p align="center">
-<b>Image 1:</b>
+<b>Image 1:</b> <br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
 <br/>
 
 
+<p align="center">
+<b>Image 1:</b> <br>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
+<br/>
+
+<p align="center">
+<b>Image 1:</b> <br>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
+<br/>
+
+
+<p align="center">
+<b>Image 1:</b> <br>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
+<br/>
 
 
 
