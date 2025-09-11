@@ -13,11 +13,11 @@ The following command lists all contents of the `projects` directory, including 
 <b>Screenshot 1 :</b> <br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.png"/>
 <br/>
-
+The first line of the screenshot displays the command I entered, and the other lines display the output. The code lists all contents of the projects directory. I used the ls command with the -la option to display a detailed listing of the file contents that also returned hidden files. The output of my command indicates that there is one directory named drafts, one hidden file named '.project_x.txt,' and five other project files. The 10-character string in the first column represents the permissions set on each file or directory.
 
 <p align="center">
 <b>Screenshot 2:</b> <br>
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/721869215fc16de5fdeffdd993d726625854f223/Images/002.png"/>
 <br/>
 
 <p align="center">
