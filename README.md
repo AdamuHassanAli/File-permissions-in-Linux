@@ -11,7 +11,7 @@ The following command lists all contents of the `projects` directory, including 
 
 ls -la projects
 <p align="center">
-<b>I reconstructed the Target attack by mapping attacker actions to each phase of the Cyber Kill Chain:</b> <br/>
+<b> :</b>
 <img src="https://github.com/AdamuHassanAli/Cyber-Kill-Chain/blob/main/Images/Cyber%20Kill%20Chain%20Answer.jpeg?raw=true"/>
 <br/>
 
