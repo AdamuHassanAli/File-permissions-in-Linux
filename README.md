@@ -11,8 +11,8 @@ The following command lists all contents of the `projects` directory, including 
 
 ls -la projects
 <p align="center">
-<b> :</b>
-<img src="https://github.com/AdamuHassanAli/Cyber-Kill-Chain/blob/main/Images/Cyber%20Kill%20Chain%20Answer.jpeg?raw=true"/>
+<b>Image 1:</b>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.pnga"/>
 <br/>
 
 
