@@ -9,7 +9,6 @@ To complete this task, I performed the following steps:
 The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.
 The following command lists all contents of the `projects` directory, including hidden files, and displays their permissions:  
 
-```bash
 ls -la projects
 <p align="center">
 <b>I reconstructed the Target attack by mapping attacker actions to each phase of the Cyber Kill Chain:</b> <br/>
