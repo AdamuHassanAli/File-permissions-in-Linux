@@ -15,17 +15,37 @@ The first line of the screenshot displays the command I entered, and the other l
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/7505ab5d7d5f895b3031d0ffe8c66e8c0562b66a/Images/d-1.png"/><br>
 The code lists all contents of the projects directory. <br> I used the <b>ls</b> command with the <b>-la</b> option to display a detailed listing of the file contents that also returned hidden files.<br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.png"/><br>
-The output of my command indicates that there is one directory named <b>drafts,</b> one hidden file named <b>.project_x.txt,</b> and five other project files.<br>
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/1d6e853fd759a56ed23231902b371f12928d0b62/Images/d-2.png"/>
+The output of my command indicates that there is one directory named <b>drafts,</b> <br>one hidden file named <b>.project_x.txt,</b> and five other project files.<br>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/1d6e853fd759a56ed23231902b371f12928d0b62/Images/d-2.png"/><br>
+The 10-character string in the first column represents the permissions set on each file or directory.<br>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/12e3d001df1289883e86871ab027b2a50527aca1/Images/d-3.png"/>
 <br/>
+   
+## Describe the permissions string
 
+The 10-character string can be deconstructed to determine who is authorized to access the file and their specific permissions. The characters and what they represent are as follows:<br>
 <p align="center">
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/12e3d001df1289883e86871ab027b2a50527aca1/Images/d-3.png"/><br>
+   
+- **1st character**: This character is either a `d` or hyphen (`-`) and indicates the file type.
+  - `d`: Directory
+  - `-`: Regular file
 
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.png"/>
+- **2nd-4th characters**: These characters indicate the read (`r`), write (`w`), and execute (`x`) permissions for the **user**. A hyphen (`-`) indicates that permission is not granted.
 
-The 10-character string in the first column represents the permissions set on each file or directory.
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/ef72945c271fc8099fe154f6e6213cb138dfa0d7/Images/001.png"/>
+- **5th-7th characters**: These characters indicate the read (`r`), write (`w`), and execute (`x`) permissions for the **group**. A hyphen (`-`) indicates that permission is not granted.
 
+- **8th-10th characters**: These characters indicate the read (`r`), write (`w`), and execute (`x`) permissions for **others** (all other users on the system). A hyphen (`-`) indicates that permission is not granted.
+
+## Example
+
+The file permissions for `project_t.txt` are `-rw-rw-r--`.
+
+- **First character** (`-`): Regular file (not a directory)
+- **User permissions** (`rw-`): Read and write permissions, no execute
+- **Group permissions** (`rw-`): Read and write permissions, no execute  
+- **Other permissions** (`r--`): Read permission only, no write or execute
+</p>
 
 <p align="center">
 <b>Screenshot 2:</b> <br>
