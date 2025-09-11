@@ -1,3 +1,25 @@
+# Project Description  
+The research team at my organization needed to update the file permissions for certain files and directories within the `projects` directory. The permissions did not properly reflect the level of authorization that should be given. Checking and updating these permissions helped keep the system secure.  
+
+To complete this task, I performed the following steps:  
+
+---
+
+## 🔎 Check File and Directory Details  
+The following code demonstrates how I used Linux commands to determine the existing permissions set for a specific directory in the file system.
+The following command lists all contents of the `projects` directory, including hidden files, and displays their permissions:  
+
+```bash
+ls -la projects
+<p align="center">
+<b>I reconstructed the Target attack by mapping attacker actions to each phase of the Cyber Kill Chain:</b> <br/>
+<img src="https://github.com/AdamuHassanAli/Cyber-Kill-Chain/blob/main/Images/Cyber%20Kill%20Chain%20Answer.jpeg?raw=true"/>
+<br/>
+
+
+
+
+
 # 📌 Portfolio Project Summary  
 As part of my role in supporting the research team at my organization, I was tasked with updating file and directory permissions within the `projects` directory. The current permissions did not properly reflect the required levels of authorization, which posed a security risk. To address this, I performed a detailed permissions audit and updated the access control settings using Linux commands.  
 
