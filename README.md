@@ -59,8 +59,9 @@ The first two lines of the screenshot display the commands I entered, and the ot
 The <b>chmod</b> command changes the permissions on files and directories.<br>The first argument indicates what <b>permissions</b> should be changed
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-1.png"/><br>
 And the second argument specifies the <b>file or directory
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-2.png"/>
-<br/>
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-2.png"/><br>
+In the above example, I removed write permissions from others for the project_k.txt file. After this, I used ls -la to review the updates I made.
+</b>
 
 <p align="center">
 <b>Screenshot 3:</b> <br>
