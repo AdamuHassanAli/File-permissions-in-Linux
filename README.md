@@ -56,66 +56,32 @@ The following code demonstrates how I used Linux commands to do this:
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/721869215fc16de5fdeffdd993d726625854f223/Images/002.png"/><br>
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-1.png"/><br>
-The <b>chmod</b> command changes the permissions on files and directories.<br>The first argument indicates what <b>permissions</b> should be changed
+The <b>`chmod`</b> command changes the permissions on files and directories.<br>The first argument indicates what <b>permissions</b> should be changed
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-1.png"/><br>
 And the second argument specifies the <b>file or directory
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-2.png"/><br>
-In the above example, I removed write permissions from others for the project_k.txt file. After this, I used ls -la to review the updates I made.
+In the above example, I removed write permissions from others for the `project_k.txt` file. After this, I used `ls -la` to review the updates I made.
 </b>
+
+## 🔒 Change File Permissions on a Hidden File
+The research team at my organization recently archived `project_x.txt.` They do not want anyone to have write access to this project, but the user and group should have read access. 
+The following code demonstrates how I used Linux commands to change the permissions:
 
 <p align="center">
 <b>Screenshot 3:</b> <br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/c79e64269c42b7275119e8cfc827a6a4e6f86928/Images/003.png"/>
-<br/>
+<br/>The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command. I know `.project_x.txt` is a hidden file because it starts with a period (.). In this example, I removed write permissions from the user and group, and added read permissions to the group. I removed write permissions from the user with `u-w.` Then, I removed write permissions from the group with `g-w,` and added read permissions to the group with `g+r`. 
 
+## 📂 Change Directory Permissions
+My organization only wants the `researcher2` user to have access to the drafts directory and its contents. This means that no one other than `researcher2` should have execute permissions.
+The following code demonstrates how I used Linux commands to change the permissions:
 
 <p align="center">
 <b>Screenshot 4:</b> <br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/c79e64269c42b7275119e8cfc827a6a4e6f86928/Images/004.png"/>
-<br/>
+<br/>The output here displays the permission listing for several files and directories. Line 1 indicates the current directory (projects), and line 2 indicates the parent directory (home). Line 3 indicates a regular file titled `.project_x.txt.` Line 4 is the directory (drafts) with restricted permissions. Here you can see that only `researcher2` has execute permissions.  It was previously determined that the group had execute permissions, so I used the `chmod` command to remove them. The `researcher2` user already had execute permissions, so they did not need to be added.
+
+## ✅ Summary
+I changed multiple permissions to match the level of authorization my organization wanted for files and directories in the projects directory. The first step in this was using `ls -la` to check the permissions for the directory. This informed my decisions in the following steps. I then used the `chmod` command multiple times to change the permissions on files and directories.
 
 
-
-# 📌 Portfolio Project Summary  
-As part of my role in supporting the research team at my organization, I was tasked with updating file and directory permissions within the `projects` directory. The current permissions did not properly reflect the required levels of authorization, which posed a security risk. To address this, I performed a detailed permissions audit and updated the access control settings using Linux commands.  
-
-## How I Did the Project  
-1. **Checked file and directory details**  
-   - Used `ls -la` to list all files, including hidden ones, and review their current permissions.  
-   - Interpreted the 10-character permission strings to understand who had read, write, and execute access.  
-
-2. **Analyzed permission strings**  
-   - Broke down each string into file type, user permissions, group permissions, and other permissions.  
-   - Example: `-rw-rw-r--` → regular file, user/group have read+write, others have read-only.  
-
-3. **Updated permissions on files**  
-   - Removed **write access** for "other" users on files like `project_k.txt` using:  
-     ```bash
-     chmod o-w project_k.txt
-     ```  
-   - Modified permissions on hidden files such as `.project_x.txt` to allow only read access for user and group:  
-     ```bash
-     chmod u-w .project_x.txt  
-     chmod g-w .project_x.txt  
-     chmod g+r .project_x.txt  
-     ```  
-
-4. **Updated directory permissions**  
-   - Adjusted the `drafts` directory so that only `researcher2` retained execute permissions:  
-     ```bash
-     chmod g-x drafts
-     ```  
-   - Verified changes with `ls -la` to confirm updates.  
-
-## Result  
-Successfully aligned file and directory permissions with organizational security policies. The updated permissions now prevent unauthorized write or execute access, reducing the risk of accidental modifications or misuse of sensitive project files.  
-
----
-
-# 📌 Resume Project Section  
-
-**Linux File Permissions Management**  
-- Conducted a permissions audit and updated security controls for files and directories in a Linux environment.  
-- Applied `ls -la` and `chmod` commands to review and modify access rights for users, groups, and others.  
-- Restricted unauthorized write access to sensitive files and enforced user-specific directory execution permissions.  
-- Improved system security posture by ensuring file permissions matched organizational authorization policies.  
