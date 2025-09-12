@@ -55,10 +55,10 @@ The following code demonstrates how I used Linux commands to do this:
 <b>Screenshot 2:</b> <br>
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/721869215fc16de5fdeffdd993d726625854f223/Images/002.png"/><br>
 The first two lines of the screenshot display the commands I entered, and the other lines display the output of the second command
-<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/C%20images%201.png"/><br>
-The <b>chmod</b> command changes the permissions on files and directories. <br>The first argument indicates what <b>permissions</b> should be changed,
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-1.png"/><br>
-And the second argument specifies the <b>file or directory</br>
+The <b>chmod</b> command changes the permissions on files and directories.<br>The first argument indicates what <b>permissions</b> should be changed
+<img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-1.png"/><br>
+And the second argument specifies the <b>file or directory
 <img src="https://github.com/AdamuHassanAli/File-permissions-in-Linux/blob/f357ba8e700722b242799b361cd9ec9a95c0ab8b/Images/c-2.png"/>
 <br/>
 
