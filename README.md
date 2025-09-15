@@ -1,6 +1,6 @@
 # Linux File Permissions Management
 <b>Platform:</b> TryHackMe | <b>Type:</b> Hands-On Lab | <b>Focus:</b> Adversary Disruption, Indicator Analysis, Threat Hunting
-# Project Description 
+## Project Description 
 The research team at my organization needed to update the file permissions for certain files and directories within the `projects` directory. The permissions did not properly reflect the level of authorization that should be given. Checking and updating these permissions helped keep the system secure.  
 
 To complete this task, I performed the following steps:  
